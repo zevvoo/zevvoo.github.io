@@ -5,4 +5,5 @@ categories: [카테고리, 서브카테고리]
 tags: [태그1, 태그2]
 ---
 
-![설명](/assets/img/posts/이미지.jpg)
+이미지 넣을 시
+<!-- ![설명](/assets/img/posts/이미지.jpg) -->
