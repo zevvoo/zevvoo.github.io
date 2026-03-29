@@ -1,43 +1,32 @@
-# Chirpy Starter
+# zevvoo Github Blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+안녕하세요, **고려대학교 세종캠퍼스 컴퓨터소프트웨어학과 유제우**입니다.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+대규모 언어 모델(LLM)을 활용하여 **AI 에이전트**를 개발하는 것을 목표로 하고 있습니다.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+최근 보안에도 관심이 생겨 해킹 연구 동아리 **"KUality"**에 속해있습니다.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+웹해킹에 관심이 있어 공부 중입니다.
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+앞으로 공부한 내용과 진행 중인 프로젝트, 사소한 IT/보안 지식에 관한 정리들을 블로그에 올릴 예정입니다.
 
-## Usage
+이 깃허브 블로그가 꽉 채워지는 그 날까지 열심히 공부하겠습니다.
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+감사합니다.
 
-## Contributing
+---
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+Hello, I’m **Jewoo Yoo**, a student in the **Department of Computer Software at Korea University.**
 
-## License
+My goal is to **develop AI agents** using large language models (LLMs).
 
-This work is published under [MIT][mit] License.
+Recently, I’ve also become interested in security and I am a member of the hacking research club **“KUality".**
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+I’m currently studying web hacking.
+
+I plan to regularly share what I learn, ongoing projects and various insights related to IT and security on this blog.
+
+I’ll keep studying and working hard until this GitHub blog is filled with meaningful content.
+
+Thank you.
