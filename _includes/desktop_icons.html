@@ -14,7 +14,8 @@
     {% for category in site.jekyll-98.desktop_categories %}
       {% assign category_exists = site.categories[category] %}
       {% if category_exists.size > 0 %}
-        <a href="{{ "/category/" | append: category | absolute_url }}">
+        {% assign category_slug = category | slugify %}
+        <a href="{{ "/category/" | append: category_slug | append: "/" | absolute_url }}">
           <div class="desktop-icon">
             <img src="{{ "/assets/icons/documents.png" | absolute_url }}" alt="Folder icon click to go to see {{ category }} posts" />
             <figcaption>{{ category | capitalize }}</figcaption>

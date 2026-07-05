@@ -29,7 +29,8 @@
             <div class="post-categories-label">Categories:
             </div>
             {% for tag in post.categories %}
-              {% assign taglink = "/category/" | append: tag | append: "/" | absolute_url %}
+              {% assign tag_slug = tag | slugify %}
+              {% assign taglink = "/category/" | append: tag_slug | append: "/" | absolute_url %}
               <a class="post-tag" href="{{ taglink }}">{{ tag }}</a>
             {% endfor %}
           </div>

@@ -30,7 +30,8 @@
         {% assign category_exists = site.categories[category] %}
         {% if category_exists.size > 0 %}
           {% assign label = category | capitalize %}
-          {% assign href = "/category/" | append: category | absolute_url %}
+          {% assign category_slug = category | slugify %}
+          {% assign href = "/category/" | append: category_slug | append: "/" | absolute_url %}
           {% assign alt_text = "Browse posts tagged " | append: category %}
           {% include start-menu-item.html
            url=href
