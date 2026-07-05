@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /about.html
+---
+
+{% capture abouttext %}
+<h4>{{ site.title }}</h4>
+<p>{{ site.description }}</p>
+<br />
+<ul>
+  {% for info in site.jekyll-98.about %}
+  <li>{{ info }}</li>
+  {% endfor %}
+</ul>
+{% include about_text.html %}
+{% endcapture %}
+
+{%include window.html width="250px" class="small-window" title=site.title content=abouttext buttons=false statusbar=false %}

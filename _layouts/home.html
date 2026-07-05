@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  {% include desktop_icons.html %}
+
+  <div class="window">
+    {% include titlebar.html title=site.title %}
+
+    <div class="window-body">
+      <h1>{{ site.title }}</h1>
+      <br />
+      <h4>{{ site.description }}</h4>
+      <br />
+      {% include post_list.html %}
+    </div>
+  </div>
+</div>

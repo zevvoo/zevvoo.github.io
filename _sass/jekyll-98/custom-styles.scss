@@ -1,0 +1,65 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/jekyll-98/custom-variables.scss` to override variable defaults)
+
+// ── Typography override ───────────────────────────────────────────────
+// 테마 기본 픽셀 폰트("Pixelated MS Sans Serif")를 가독성 좋은 Pretendard로 교체.
+// !important 로 98.css / 테마의 요소별 선언(figcaption, title-bar, body 등)까지
+// 모두 덮어써서 일부 요소만 픽셀 폰트로 남는 질감 섞임을 방지한다.
+$font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+  "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", "Noto Sans KR", sans-serif;
+$font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+  "D2Coding", "Courier New", monospace;
+
+* {
+  font-family: $font-sans !important;
+  // 픽셀 폰트용 안티앨리어싱 OFF 를 되돌려 매끈하게 렌더링
+  font-smooth: always !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+// 코드/고정폭 텍스트는 깔끔한 monospace 로
+code,
+kbd,
+samp,
+pre,
+.post-content code,
+.post-content pre {
+  font-family: $font-mono !important;
+}
+
+// 홈 post list 안의 글 제목을 굵게
+.post-list .post-link {
+  font-weight: 700 !important;
+}
+
+// 홈 메인 윈도우: 좌우 여백을 동일하게 맞추고 오른쪽으로 넓힘.
+// 왼쪽 여백 = 아이콘 spacer(aside 128px) + 창 마진 16px = 144px,
+// 오른쪽 마진도 144px 로 맞춰 대칭. flex:1 로 그 사이를 꽉 채운다.
+// (내부 post list 는 블록 요소라 넓어진 너비에 맞춰 자동으로 늘어남)
+.home {
+  // 아이콘 spacer 가 flex 축소로 줄지 않게 고정 → 좌측 여백을 정확히 144px 로 유지
+  & > aside {
+    flex-shrink: 0;
+  }
+
+  & .window {
+    flex: 1 1 auto;
+    max-width: none;
+    margin: 16px 144px 16px 16px;
+  }
+}
+
+// 포스트(글 내용) 페이지도 홈과 동일하게 좌우 여백 144px 대칭으로 확장.
+// (세로 마진은 테마 기본값 유지: 위 16px / 아래 128px)
+.post-page {
+  & > aside {
+    flex-shrink: 0;
+  }
+
+  & .window {
+    flex: 1 1 auto;
+    max-width: none;
+    margin: 16px 144px 128px 16px;
+  }
+}

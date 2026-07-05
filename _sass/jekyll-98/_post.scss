@@ -1,0 +1,70 @@
+.post-page {
+  display: flex;
+
+  & .window {
+    margin-bottom: 128px;
+    margin-top: 16px;
+    max-width: 66%;
+
+    @include media-query($on-palm) {
+      display: block;
+      margin: 16px auto 128px auto;
+      max-width: 96vw;
+    }
+  }
+
+  & .status-bar {
+    margin: 6px -6px -6px -6px;
+    
+    &-field {
+      font-size: 1rem;
+      padding: 4px;
+    }
+  }
+}
+
+.post-content {
+  & * {
+    font-size: 1rem;
+  }
+
+  & ul.tree-view a {
+    text-decoration: underline;
+    
+    &:hover {
+      color: blue
+    }
+  }
+
+  & h1, h2, h3, h4, h5, h6 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  & img {
+    display: block;
+    max-height: 90vh;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  & p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 1.3rem;
+  }
+
+  & code {
+    font-family: "Perfect DOS VGA 437 Win";
+    font-size: 1.15rem;
+  }
+
+  & pre {
+    overflow: scroll;
+  }
+
+  & .highlighter-rouge {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+}

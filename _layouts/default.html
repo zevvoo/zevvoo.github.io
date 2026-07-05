@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'end' }}">
+<title>{{site.title}} {{ " " }}{%- if page.title -%} - {{page.title}}{%- endif -%}</title>
+
+  {%- include head.html -%}
+  
+  <body class="desktop">
+    <main>
+      <div class="page-content" aria-label="Content">
+        {{ content }}
+      </div>
+    </main>
+    
+    {%- include footer.html -%}
+    
+  </body>
+</html>

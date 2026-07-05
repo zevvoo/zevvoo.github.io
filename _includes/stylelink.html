@@ -1,0 +1,12 @@
+{%- comment -%} EXPERIMENTAL - Swaps 98.css for XP.css with no other changes - will require fixes {%- endcomment -%}
+{% if site.jekyll-98.xp %}
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/xp.css"
+  > 
+{% else %}
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/xp.css/dist/98.css"
+  >
+{% endif %}

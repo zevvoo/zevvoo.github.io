@@ -1,7 +1,7 @@
 ---
 title: "LLM Neuroanatomy: How I Topped the LLM Leaderboard Without Changing a Single Weight"
 date: 2026-03-23 00:00:00 +0900
-categories: [Issue, AI/ML]
+categories: [Issues, AI/ML]
 tags: [LLM, AI, ML, DL, LLM Layer]
 ---
 

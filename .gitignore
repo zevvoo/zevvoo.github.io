@@ -25,3 +25,13 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# macOS
+.DS_Store
+
+# Theme migration backups
+*.chirpy.bak
+
+# Claude Code local config & CI build dir
+.claude
+_site_ci

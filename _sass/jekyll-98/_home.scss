@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  & .window {
+    margin: 16px;
+    height: fit-content;
+    max-width: 66%;
+  }
+  & .window-body {
+    padding: 16px;
+  }
+}
+
+.desktop {
+  background-color: #05070f; // fallback / letterbox color matching the image
+  background-image: url('../../assets/img/bg.jpg');
+  background-size: cover;          // 비율 유지하며 화면에 꽉 차게 (왜곡 없음)
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;    // 스크롤해도 배경 고정
+  min-height: 100vh;
+}
+
